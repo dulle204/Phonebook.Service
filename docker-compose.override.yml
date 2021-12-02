@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  phonebook.service:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+    ports:
+      - "80"
+      - "443"
+  
+  phonebook.db:
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=Pass123_
+      - POSTGRES_DB=phonebook-db
+    command: 
+      - -c
+      - max_prepared_transactions=100
+    ports:
+      - 5435:5432

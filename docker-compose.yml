@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  phonebook.service:
+    image: ${DOCKER_REGISTRY-}phonebookservice
+    build:
+      context: .
+      dockerfile: Phonebook.Service/Dockerfile
+
+  phonebook.db:
+    networks:
+      - fleetops_network
+    image: "postgres"
+    container_name: phonebook.db
+
+
+networks:
+  fleetops_network:
