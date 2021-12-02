@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phonebook.Service", "Phonebook.Service\Phonebook.Service.csproj", "{0611FE96-3825-4366-BE62-1F26F058F1ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phonebook.Service", "Phonebook.Service\Phonebook.Service.csproj", "{0611FE96-3825-4366-BE62-1F26F058F1ED}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{B8EF6013-F72D-478D-B91D-82B57583DA8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phonebook.Data", "Phonebook.Data\Phonebook.Data.csproj", "{D36F56CB-C88A-4CE5-912C-42BBEAC5777B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phonebook.Data", "Phonebook.Data\Phonebook.Data.csproj", "{D36F56CB-C88A-4CE5-912C-42BBEAC5777B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phonebook.Data.Migration", "Phonebook.Data.Migration\Phonebook.Data.Migration.csproj", "{3B00A5D6-0CF2-4CA6-BD16-C7291A62B008}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{D36F56CB-C88A-4CE5-912C-42BBEAC5777B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D36F56CB-C88A-4CE5-912C-42BBEAC5777B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D36F56CB-C88A-4CE5-912C-42BBEAC5777B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B00A5D6-0CF2-4CA6-BD16-C7291A62B008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B00A5D6-0CF2-4CA6-BD16-C7291A62B008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B00A5D6-0CF2-4CA6-BD16-C7291A62B008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B00A5D6-0CF2-4CA6-BD16-C7291A62B008}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

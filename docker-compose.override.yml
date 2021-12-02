@@ -19,3 +19,8 @@ services:
       - max_prepared_transactions=100
     ports:
       - 5435:5432
+
+  phonebook.data.migration:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__PostgresDb=Server=phonebook.db;Port=5432;Database=phonebook.db;User Id=postgres;Password=Pass123_;

@@ -9,10 +9,20 @@ services:
 
   phonebook.db:
     networks:
-      - fleetops_network
+      - phonebook_network
     image: "postgres"
     container_name: phonebook.db
 
-
+  phonebook.data.migration:
+    image: ${REGISTRY}/phonebook.data.migration
+    networks:
+      - phonebook_network
+    container_name: phonebook.data.migration
+    build:
+      context: ..
+      target: final
+      dockerfile: Phonebook.Data.Migration/Dockerfile
+    depends_on:
+      - phonebook.db
 networks:
-  fleetops_network:
+  phonebook_network:
